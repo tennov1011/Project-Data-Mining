@@ -1,27 +1,41 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
     padding: 20px;
 }
 
 h2 {
-    color: #333;
+    color: #2c3e50;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 form {
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
     padding: 30px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.form-column {
+    flex: 1;
+    min-width: 300px;
 }
 
 label {
     display: block;
     margin-top: 15px;
     font-weight: bold;
+    color: #34495e;
 }
 
 input[type="number"],
@@ -29,29 +43,32 @@ input[type="text"] {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #ccd1d9;
+    border-radius: 6px;
     box-sizing: border-box;
+    background-color: #fefefe;
 }
 
 input[type="submit"] {
-    margin-top: 20px;
+    margin-top: 25px;
     width: 100%;
-    padding: 12px;
-    background-color: #4CAF50;
+    padding: 14px;
+    background-color: #2980b9;
     color: white;
     border: none;
     border-radius: 6px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #2471a3;
 }
 
 h3 {
     text-align: center;
-    color: #444;
+    color: #2d3436;
     margin-top: 30px;
 }

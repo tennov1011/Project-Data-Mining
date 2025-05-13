@@ -29,6 +29,15 @@ form {
 .form-column {
     flex: 1;
     min-width: 300px;
+    padding: 20px;
+    border: 2px solid #dfe6e9;
+    border-radius: 10px;
+    background-color: #fdfefe;
+    transition: box-shadow 0.3s ease;
+}
+
+.form-column:hover {
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.2);
 }
 
 label {
@@ -47,6 +56,16 @@ input[type="text"] {
     border-radius: 6px;
     box-sizing: border-box;
     background-color: #fefefe;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="number"]:hover,
+input[type="text"]:hover,
+input[type="number"]:focus,
+input[type="text"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+    outline: none;
 }
 
 input[type="submit"] {
@@ -60,11 +79,12 @@ input[type="submit"] {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 input[type="submit"]:hover {
     background-color: #2471a3;
+    transform: scale(1.02);
 }
 
 h3 {

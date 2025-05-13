@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction For Mental Health</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Form Prediksi Depresi</h2>
+    <form method="POST" action="/predict">
+        <!-- Semua input disesuaikan dengan urutan fitur model -->
+        <label>Name:</label><input type="text" name="Name"><br>
+        <label>Gender (0: Male, 1: Female):</label><input type="number" name="Gender"><br>
+        <label>Age:</label><input type="number" name="Age" step="any"><br>
+        <label>City (numeric encoding):</label><input type="number" name="City"><br>
+        <label>Student or Working Professional (0/1):</label><input type="number" name="Working Professional or Student"><br>
+        <label>Profession (numeric encoding):</label><input type="number" name="Profession"><br>
+        <label>Academic Pressure:</label><input type="number" name="Academic Pressure" step="any"><br>
+        <label>Work Pressure:</label><input type="number" name="Work Pressure" step="any"><br>
+        <label>CGPA:</label><input type="number" name="CGPA" step="any"><br>
+        <label>Study Satisfaction:</label><input type="number" name="Study Satisfaction" step="any"><br>
+        <label>Job Satisfaction:</label><input type="number" name="Job Satisfaction" step="any"><br>
+        <label>Sleep Duration:</label><input type="number" name="Sleep Duration" step="any"><br>
+        <label>Dietary Habits:</label><input type="number" name="Dietary Habits" step="any"><br>
+        <label>Degree (numeric encoding):</label><input type="number" name="Degree"><br>
+        <label>Suicidal Thoughts (0: No, 1: Yes):</label><input type="number" name="Have you ever had suicidal thoughts ?"><br>
+        <label>Work/Study Hours:</label><input type="number" name="Work/Study Hours" step="any"><br>
+        <label>Financial Stress:</label><input type="number" name="Financial Stress" step="any"><br>
+        <label>Family History of Mental Illness (0/1):</label><input type="number" name="Family History of Mental Illness"><br>
+        <label>isStudents (0/1):</label><input type="number" name="isStudents"><br>
+        <label>isWorkingProfessional (0/1):</label><input type="number" name="isWorkingProfessional"><br>
+        <label>Stress Score:</label><input type="number" name="Stress_Score" step="any"><br>
+        <br>
+        <input type="submit" value="Prediksi">
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>

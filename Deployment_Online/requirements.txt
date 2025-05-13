@@ -1,0 +1,7 @@
+streamlit
+streamlit-folium
+tensorflow>=2.5
+numpy
+keras
+pillow
+scikit-learn

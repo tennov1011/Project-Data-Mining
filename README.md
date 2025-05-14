@@ -100,6 +100,22 @@ The dataset includes:
 - HTML form for user input and prediction  
 - Styled with `style.css`
 
+# 📚 Credits
+
+**Dataset**: Kaggle - *Exploring Mental Health Data*
+
+**👨‍💻 Team Members:**
+- Reinaldy Hutapea (12S22010)  
+- Kezia Hutagaol (12S22014)  
+- Tennov Pakpahan (12S22028)  
+- Jufourlisa Sirait (12S22044)
+
+---
+
+# 📌 License
+
+This project is intended for **educational purposes only**.
+
 ### Online Deployment:
 - **Streamlit app** using `streamlit_app.py`  
 - Requirements listed in `requirements.txt`

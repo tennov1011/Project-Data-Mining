@@ -15,7 +15,7 @@ st.title("Mental Health Prediction App")
 name = st.text_input("Name")
 
 gender = st.number_input("Gender (0=Female, 1=Male)", min_value=0, max_value=1, step=1)
-age = st.number_input("Age", min_value=18.0, max_value=60.0, step=0.1)
+age = st.number_input("Age", min_value=18.0, step=0.1)
 city = st.number_input("City (Encoded)", min_value=0, max_value=97, step=1)
 working_or_student = st.number_input("Working Professional or Student (0=Student, 1=Working)", min_value=0, max_value=1, step=1)
 profession = st.number_input("Profession (Encoded)", min_value=0, max_value=63, step=1)
@@ -31,8 +31,6 @@ suicidal_thoughts = st.number_input("Have you ever had suicidal thoughts? (0=No,
 work_study_hours = st.number_input("Work/Study Hours", min_value=0.0, max_value=12.0, step=0.1)
 financial_stress = st.number_input("Financial Stress", min_value=1.0, max_value=5.0, step=0.1)
 family_history = st.number_input("Family History of Mental Illness (0=No, 1=Yes)", min_value=0, max_value=1, step=1)
-is_student = st.number_input("isStudents (0=No, 1=Yes)", min_value=0, max_value=1, step=1)
-is_working = st.number_input("isWorkingProfessional (0=No, 1=Yes)", min_value=0, max_value=1, step=1)
 stress_score = st.number_input("Stress Score", min_value=2.0, max_value=10.0, step=0.1)
 
 # Normalisasi fitur tertentu
@@ -58,8 +56,6 @@ input_features = np.array([[
     normalized_work_study_hours,    # Gunakan hasil scaling
     normalized_financial_stress,    # Gunakan hasil scaling
     family_history,
-    is_student,
-    is_working,
     stress_score,
 ]])
 

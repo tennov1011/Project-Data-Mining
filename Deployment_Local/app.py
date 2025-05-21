@@ -51,8 +51,6 @@ def predict():
             normalized_work_study_hours,
             normalized_financial_stress,
             float(request.form['Family History of Mental Illness']),
-            float(request.form['isStudents']),
-            float(request.form['isWorkingProfessional']),
             float(request.form['Stress_Score']),
         ]
 

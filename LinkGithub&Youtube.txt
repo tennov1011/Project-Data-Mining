@@ -1,3 +1,3 @@
 Link Github : https://github.com/tennov1011/Project-Data-Mining
 Link Youtube : https://youtu.be/2aTxn2HH2w4
-Link Streamlit : https://project-data-mining-kel9.streamlit.app/
+Link Streamlit : https://project-data-mining-kel09.streamlit.app/
